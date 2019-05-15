@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+        http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         id="WebApp_ID" version="3.1">
+    <display-name>webmvc-learn</display-name>
+    <!--<servlet>
+        &lt;!&ndash;默认会读取当前目录下的 [servlet-name]-servlet.xml文件&ndash;&gt;
+        <servlet-name>dispatcher</servlet-name>
+        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>dispatcher</servlet-name>
+        &lt;!&ndash;
+        /*:代表所有的jsp文件都必须有对应的Controller对应，不然就会报错
+         /:表示将DispatcherServlet作为default Servlet（默认是org.apache.catalina.servlets.DefaultServlet），所有其他路径映射未匹配情况下才会交由它处理。而由于隐式映射的关系，使得 .jsp 扩展名被映射到静态资源进而被执行。
+         &ndash;&gt;
+        <url-pattern>/</url-pattern>
+    </servlet-mapping>-->
+
+</web-app>

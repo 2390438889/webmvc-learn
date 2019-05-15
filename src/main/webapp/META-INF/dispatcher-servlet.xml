@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+       <!--需要扫描的bean-->
+       <context:component-scan base-package="com.lujie.mvc.controller"></context:component-scan>
+
+       <bean id="freemarkerConfiguration" class="org.springframework.beans.factory.config.PropertiesFactoryBean">
+              <property name="location" value="../WEB-INF/freemarker.properties"/>
+       </bean>
+
+       <!-- FreeMarker模板路径 -->
+       <bean id="freemarkerConfig"
+             class="org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer">
+              <property name="freemarkerSettings" ref="freemarkerConfiguration" />
+              <property name="templateLoaderPath">
+                     <value>/WEB-INF/pages/</value>
+              </property>
+              <property name="freemarkerVariables">
+                     <map>
+                            <entry key="xml_escape" value-ref="fmXmlEscape" />
+                     </map>
+              </property>
+              <property name="defaultEncoding">
+                     <value>utf-8</value>
+              </property>
+       </bean>
+       <bean id="fmXmlEscape" class="freemarker.template.utility.XmlEscape" />
+
+       <!-- 配置freeMarker视图解析器 -->
+       <bean
+               class="org.springframework.web.servlet.view.freemarker.FreeMarkerViewResolver">
+              <property name="viewClass"
+                        value="org.springframework.web.servlet.view.freemarker.FreeMarkerView" />
+              <property name="contentType" value="text/html; charset=utf-8" />
+              <property name="suffix" value=".ftl" />
+              <property name="order" value="0" />
+       </bean>
+
+</beans>
