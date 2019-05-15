@@ -6,6 +6,7 @@
 
     <groupId>spring.webmvc.learn</groupId>
     <artifactId>webmvc-learn</artifactId>
+    <packaging>war</packaging>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
