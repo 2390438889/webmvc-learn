@@ -11,6 +11,10 @@ import org.springframework.web.servlet.ModelAndView;
  */
 @Controller
 public class TestController {
+    /**
+     * 首页
+     * @return
+     */
     @RequestMapping("/index")
     public String index(){
         return "index";
