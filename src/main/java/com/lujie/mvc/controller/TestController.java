@@ -12,7 +12,7 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class TestController {
     /**
-     * 首页
+     * 首页11
      * @return
      */
     @RequestMapping("/index")
