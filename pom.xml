@@ -76,6 +76,7 @@
     </dependencies>
 
     <build>
+        <finalName>webmvc-learn</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
