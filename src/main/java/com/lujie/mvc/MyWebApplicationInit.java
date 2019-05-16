@@ -16,7 +16,7 @@ import javax.servlet.ServletRegistration;
 public class MyWebApplicationInit implements WebApplicationInitializer {
     @Override
     public void onStartup(ServletContext servletContext) throws ServletException {
-        //½«AppConfigÅäÖÃÌí¼Óµ½Web·şÎñÖĞ
+        //å°†AppConfigé…ç½®æ·»åŠ åˆ°WebæœåŠ¡ä¸­
         AnnotationConfigWebApplicationContext applicationContext=new AnnotationConfigWebApplicationContext();
         applicationContext.register(WebConfig.class);
         applicationContext.setServletContext(servletContext);

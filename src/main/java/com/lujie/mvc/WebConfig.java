@@ -35,7 +35,7 @@ public class WebConfig {
     }*/
 
     /**
-     * ÉèÖÃfreemarkerÅäÖÃÎÄ¼şÂ·¾¶
+     * è®¾ç½®freemarkeré…ç½®æ–‡ä»¶è·¯å¾„
      * @return
      */
     @Bean
@@ -46,7 +46,7 @@ public class WebConfig {
     }
 
     /**
-     * ÅäÖÃfreemarkerÄ£°åÂ·¾¶
+     * é…ç½®freemarkeræ¨¡æ¿è·¯å¾„
      * @return
      */
     @Bean
@@ -61,7 +61,7 @@ public class WebConfig {
         return freeMarkerConfigurer;
     }
     /**
-     * ÅäÖÃfreemarkerÊÓÍ¼½âÎöÆ÷
+     * é…ç½®freemarkerè§†å›¾è§£æå™¨
      * @return
      */
     @Bean
